@@ -1,4 +1,4 @@
-public interface Calculator<T/* extends Number*/> {
+public interface Calculator<T> {
     double calculateFees(T clubID);
 
 }

@@ -9,8 +9,9 @@ public class MembershipManagement {
         int userChoice = 0;
 
         try {
-            System.out.println();
-            userChoice = reader.nextInt();
+            if (reader.hasNext()){
+            //System.out.println();
+            userChoice = reader.nextInt();}
          } catch (Exception e) {
             reader.nextLine();
             userChoice = -1;
@@ -35,7 +36,7 @@ public class MembershipManagement {
         System.out.println("1) Add Member");
         System.out.println("2) Remove Member");
         System.out.println("3) Display Member Information\n");
-        System.out.println("Please select an option (or Enter -1 to quit): ");
+        System.out.print("Please select an option (or Enter -1 to quit): ");
 
         int choice = getIntInput();
 
@@ -48,29 +49,33 @@ public class MembershipManagement {
         // нового посетителя. После добавления данных в LinkedList он возвращает строку с информацией
         // о добавленном посетителе.
 
-        //String name;
+        String name;
         int club;
         String mem;
         double fees;
         int memberID;
         Member mbr;
         Calculator<Integer> cal;
-     System.out.print("Name: ");
-      String name = reader.nextLine();
+
+
 
         printClubOptions();
-       //int
+        System.out.print("Choice club: ");
         club = getIntInput();
         while (club < 1 || club > 4) {
             System.out.print("Error. Try again: ");
             club = getIntInput();
         }
 
+        System.out.print("Enter Name: ");
+        name = reader.next();
+
         if (m.size() > 0) {
             memberID = m.getLast().getMemberID() + 1;
         } else {
             memberID = 1;
         }
+
         if (club != 4) {
             cal = (n)-> {
                 switch (n) {
@@ -80,11 +85,9 @@ public class MembershipManagement {
                 default: return -1;
                 }
             };
-
             fees = cal.calculateFees(club);
             mbr = new SingleClubMember('S', memberID, name, fees, club);
-            System.out.println("SingleClub Member added\n" + memberID + name + fees);
-
+            System.out.println("SingleClub Member added:\n" + mbr.toString());//+ memberID + name + fees);
         } else {
             cal = (n)-> {
                 switch (n) {
@@ -94,7 +97,7 @@ public class MembershipManagement {
             };
             fees = cal.calculateFees(club);
            mbr = new MultiClubMember('M', memberID, name, fees, 100);
-           System.out.println("MultiClub Member added:\n" + memberID + name + fees);
+           System.out.println("MultiClub Member added:\n" + mbr);// memberID + name + fees);
 
         }
         m.add(mbr);
@@ -104,26 +107,28 @@ public class MembershipManagement {
     //------------------------
 
         public void removeMember(LinkedList<Member> m) {
-        System.out.println("Enter Member ID you want remove: ");
-            int memberID = getIntInput();
-        for (int i=0; i<m.size(); i++){
-        if (m.get(i).getMemberID() == memberID){
-            m.remove(i);
-            System.out.println("Member has been removed.");
-            break;
-        }
-        else System.out.println("There is no Member with this ID.");
-        }
-    }
 
+            System.out.println("Enter Member ID you want remove: ");
+            int memberID = getIntInput();
+            for (int i = 0; i < m.size(); i++) {
+                if (m.get(i).getMemberID() == memberID) {
+                    m.remove(i);
+                    System.out.println("Member has been removed.");
+                    break;
+                } else {
+                    System.out.println("There is no Member with this ID.");
+                }
+            }
+        }
   //----------------------------
+
       public void printMemberInfo(LinkedList<Member> m)
   {
-      System.out.println("Enter Member ID to info: ");
+      System.out.print("Enter Member ID to info: ");
       int memberID = getIntInput();
       for (int i=0; i<m.size(); i++){
           if (m.get(i).getMemberID() == memberID){
-            //  m.remove(i);
+                 m.remove(i);
               System.out.println(m.toString());
               break;
           }

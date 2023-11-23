@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
-}
-=======
 import java.util.LinkedList;
 
 public class JavaProject {
@@ -34,4 +27,3 @@ public class JavaProject {
             }
 
     }
->>>>>>> 3cfaa13 (1)

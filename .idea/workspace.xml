@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="887ca7f2-6e5a-4ace-a026-4854c94b1b11" name="Changes" comment="" />
+=======
     <list default="true" id="887ca7f2-6e5a-4ace-a026-4854c94b1b11" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -11,11 +14,14 @@
       <change afterPath="$PROJECT_DIR$/JavaProject.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/JavaProject.java" afterDir="false" />
     </list>
+>>>>>>> 3cfaa13 (1)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+=======
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -30,6 +36,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+>>>>>>> 3cfaa13 (1)
   <component name="ProjectId" id="2YKjQLqdaDpq7vLemOpHmjwnq2t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,6 +47,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+=======
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/Елена/Downloads/Progect1_OzoneFitnes-master"
@@ -50,6 +62,7 @@
       <recent name="C:\Users\Елена\Desktop\Java\JavaProject" />
     </key>
   </component>
+>>>>>>> 3cfaa13 (1)
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,6 +71,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700281155739</updated>
+<<<<<<< HEAD
+    </task>
+    <servers />
+  </component>
+=======
       <workItem from="1700281158814" duration="6242000" />
       <workItem from="1700671594145" duration="29986000" />
     </task>
@@ -77,4 +95,5 @@
       </map>
     </option>
   </component>
+>>>>>>> 3cfaa13 (1)
 </project>

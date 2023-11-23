@@ -17,12 +17,6 @@ public class Member {
         return memberType + ", " + memberID +
                 ", " + name + ", " +
                 ", " + fees;
-        /*
-        return "Member " +
-                " Type=" + memberType +
-                ", ID=" + memberID +
-                ", Name='" + name + '\'' +
-                ", Fees=" + fees;*/
     }
 
     public char getMemberType() {
@@ -57,9 +51,4 @@ public class Member {
         this.fees = fees;
     }
 
-  /*  public void Calculator(double ClubId)
-    {
-        System.out.printf("Fees: %.2f\n", ClubId);
-    }
-*/
 }

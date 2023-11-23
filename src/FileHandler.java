@@ -6,28 +6,27 @@ public class FileHandler {
 
 
     public LinkedList<Member> readFile() {
-            LinkedList<Member> m = new LinkedList<>();
+        LinkedList<Member> m = new LinkedList<>();
 
         Scanner scanner = new Scanner("members.csv");
         while (scanner.hasNextLine()) {
-            String line = scanner.nextLine();
-            String[] parts = line.split(", ");
+            String l = scanner.nextLine();
+            String[] parts = l.split(", ");
 
             if (parts.length == 4) {
                 char pMemberType = parts[0].charAt(0);
                 int pMemberID = Integer.parseInt(parts[1]);
                 String pName = parts[2];
                 double pFees = Double.parseDouble(parts[3]);
-
                 Member member = new Member(pMemberType, pMemberID, pName, pFees);
                 m.add(member);
             } else {
-                System.err.println("Неверный формат данных в строке: " + line);
-            }
-        }
-        scanner.close();
+                System.err.println("Неверный формат данных в строке: " + l);
+            }}
+                scanner.close();
 
-        return m;
+            return m;
+
     }
 
 //Этот открытый метод не получает параметра и возвращает коллекцию LinkedList с объектами Member.
